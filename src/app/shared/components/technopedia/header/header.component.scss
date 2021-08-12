@@ -1,0 +1,298 @@
+@import "../../../../../styles/color.scss";
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 11111 !important;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 20%), 0 0 10px 0 rgb(0 0 0 / 19%);
+}
+.navbar-collapsive li {
+  height: 70px !important;
+}
+.title {
+  width: 70px !important;
+  height: 70px !important;
+}
+.title:hover {
+  animation: icon-move 1s !important;
+}
+.sub-title {
+  font-size: 1.5rem;
+  padding-left: 5px;
+  position: relative;
+  top: 4px;
+  left: -4px;
+  font-weight: bold;
+  font-family: 'Nexa', serif;
+}
+.navbar-title {
+  font-size: 1.8rem;
+  color: $color-dark-charcoal;
+  font-weight: bold;
+  border-left: 1px solid $color-light-grey !important;
+}
+.navbar-title:hover img {
+  animation: icon-move 1s;
+}
+.navbar-toggler {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+.navbar-toggler i {
+  color: $color-cathams-blue;
+}
+.navbar-no-scroll {
+  flex-direction: row;
+}
+
+.navbar-no-scroll li a i {
+  color: $color-cathams-blue;
+}
+
+#navbarScroll ul li a {
+  line-height: 55px;
+  font-size: 1.2rem;
+}
+
+.navbar-no-scroll li a {
+  line-height: 55px;
+  font-size: 1.2rem;
+}
+
+#navbarScroll ul li {
+  cursor: pointer;
+  border-left: 1px solid $color-light-grey !important;
+}
+
+.navbar-no-scroll li {
+  cursor: pointer;
+  border-left: 1px solid $color-light-grey !important;
+  border-right: 1px solid $color-light-grey !important;
+}
+
+.navbar-no-scroll li:hover {
+  background-color: $color-cathams-blue;
+}
+
+.navbar-no-scroll li:hover a i {
+  color: $color-white;
+}
+
+#navbarScroll ul li:hover {
+  background-color: $color-cathams-blue;
+}
+
+#navbarScroll ul li:hover a i,
+#navbarScroll ul li:hover a span {
+  color: $color-white;
+}
+
+#navbarScroll ul li a i {
+  color: $color-cathams-blue;
+}
+
+#navbarScroll ul li a span {
+  color: $color-cathams-blue;
+  font-weight: bold;
+}
+
+#navbarScroll ul li:hover a i {
+  animation: icon-move 1s;
+}
+
+.navbar-no-scroll li a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  border: 2px solid $color-cathams-blue;
+}
+
+.navbar-no-scroll li:hover a img {
+  border: 2px solid $color-white;
+}
+
+.language-dropdown,
+.user-dropdown,
+.color-dropdown {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  background-color: $color-white;
+  display: block;
+  width: 160px;
+  top: 72px;
+  transform-origin: 100% 0px;
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+  color: $color-cathams-blue;
+  z-index: 111111;
+}
+
+.language-dropdown {
+  right: 165px;
+  z-index: 10001;
+}
+
+.user-dropdown {
+  right: 0px;
+  z-index: 10001;
+}
+
+.color-dropdown {
+  right: 112px;
+  z-index: 10001;
+}
+
+.language-dropdown li,
+.user-dropdown li,
+.color-dropdown li {
+  height: 40px;
+  border: 1px solid $color-light-grey;
+  cursor: pointer;
+}
+
+.language-dropdown li a,
+.user-dropdown li a,
+.color-dropdown li a {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 40px !important;
+  padding-left: 10px;
+  color: $color-cathams-blue;
+}
+
+.color-dropdown li a span {
+  color: $color-white !important;
+}
+
+.language-dropdown li:hover,
+.user-dropdown li:hover,
+.color-dropdown li:hover {
+  background-color: $color-cathams-blue;
+}
+
+.active {
+  background-color: $color-cathams-blue;
+}
+.active-text {
+  color: $color-white !important;
+}
+
+.language-dropdown li:hover a span,
+.user-dropdown li:hover a span,
+.color-dropdown li:hover a span {
+  color: $color-white;
+}
+
+.navbar-title {
+  height: 100%;
+  line-height: 55px;
+}
+
+.navbar-title img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+#navbarScroll {
+  z-index: 10001;
+}
+
+//Media Queries
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .large-screen {
+    display: none;
+  }
+  .small-screen {
+    display: flex;
+  }
+  .author {
+    border-right: 1px solid $color-light-grey;
+  }
+  #navbarScroll .navbar-collapsive {
+    height: auto !important;
+    margin: 0 !important;
+    background-color: $color-white;
+  }
+  #navbarScroll .navbar-collapsive li {
+    border-bottom: 1px solid $color-light-grey;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .large-screen {
+    display: none;
+  }
+  .small-screen {
+    display: flex;
+  }
+  .author {
+    border-right: 1px solid $color-light-grey;
+  }
+  #navbarScroll .navbar-collapsive {
+    height: auto !important;
+    margin: 0 !important;
+    background-color: $color-white;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .large-screen {
+    display: none;
+  }
+  .small-screen {
+    display: flex;
+    height: 69px;
+  }
+  .author {
+    border-right: 1px solid $color-light-grey;
+  }
+  #navbarScroll .navbar-collapsive {
+    height: auto !important;
+    margin: 0 !important;
+    background-color: $color-white;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .large-screen {
+    display: flex;
+    height: 70px;
+  }
+  .small-screen {
+    display: none;
+    height: 69px;
+  }
+  .author {
+    border-right: 0;
+  }
+  #navbarScroll .navbar-collapsive {
+    height: 70px !important;
+    margin-left: auto !important;
+    background-color: $color-white;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .large-screen {
+    display: flex;
+    height: 70px;
+  }
+  .small-screen {
+    display: none;
+  }
+  .author {
+    border-right: 0;
+  }
+  #navbarScroll .navbar-collapsive {
+    height: 70px !important;
+    margin-left: auto !important;
+    background-color: $color-white;
+  }
+}

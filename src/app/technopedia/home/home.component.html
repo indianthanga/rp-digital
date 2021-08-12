@@ -1,0 +1,212 @@
+<div class="h-70px"></div>
+<div class="container-fluid bg-color-white">
+    <div class="row h-500px bg-color-white">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0 carousel">
+            <div class="left h-490px">
+                <i class="fas fa-chevron-left" (click)="movePrev()"></i>
+            </div>
+            <div class="main">
+                <div *ngIf="carouselIndex == -1" class="container-fluid p-0 h-490px carousel-1">
+                        <div class="h-50px"></div>
+                        <div class="h-50px"></div>
+                        <h1>RP <span><u>Di</u>g<u>ital</u></span></h1>
+                        <div class="h-20px"></div>
+                        <div class="round-holder"><h3>Your Dreams&nbsp;&nbsp;<span class="round"></span>&nbsp;&nbsp;&nbsp;Our Passion</h3></div>
+                        <div class="h-40px"></div>
+                        <h4>+91 96985 30311 rpdigitaltirupur@gmail.com</h4>
+                </div>
+                <div *ngFor="let carousel of carousels; let i = index">
+                    <div class="container-fluid p-0 h-490px carousel-many" *ngIf="carouselIndex == i">
+                        <img src="assets/background-images/{{i+1}}.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="right h-490px">
+                <i class="fas fa-chevron-right" (click)="moveNext()"></i>
+            </div>
+            <div class="bottom">
+                <div class="carousel-highlighter" [ngClass]="{'on': carouselIndex==-1}" (click)="moveCurrent(-1)"></div>
+                <div *ngFor="let carousel of carousels; let i = index">
+                    <div class="carousel-highlighter" [ngClass]="{'on': carouselIndex==i}" (click)="moveCurrent(i)">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row h-40px bg-color-cathams-blue">
+
+    </div>
+    <div class="row bg-color-cathams-blue promote">
+        <h3>ONE-OF-THE-BEST-EVENT-PLANNER</h3>
+        <h4 class="font-weight-bold">Book with us for 100% satisfaction</h4>
+    </div>
+    <div class="row h-30px bg-color-cathams-blue">
+
+    </div>
+    <div class="row bg-color-cathams-blue promote-list">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="row h-20px"></div>
+                    <i class="fas fa-magic"></i>
+                    <div class="row h-20px"></div>
+                    <h5 class="card-title font-weight-bold">Find the perfect design</h5>
+                    <p class="card-text">Select the list of available designs, customize and feel the visual and audio components live.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row h-20px card-gap"></div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="row h-20px"></div>
+                    <i class="far fa-thumbs-up"></i>
+                    <div class="row h-20px"></div>
+                    <h5 class="card-title font-weight-bold">Book with confidence</h5>
+                    <p class="card-text">Book with us and leave the rest, customer satisfaction is our motto too forever.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row h-20px card-gap"></div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="row h-20px"></div>
+                    <i class="far fa-grin-tears"></i>
+                    <div class="row h-20px"></div>
+                    <h5 class="card-title font-weight-bold">Enjoy your event</h5>
+                    <p class="card-text">Be a guest for your own event, enjoy and focus not on outcome, we are here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row h-20px bg-color-cathams-blue">
+
+    </div>
+    <div class="row bg-color-white">
+        <div class="container-fluid technology-stack">
+            <div class="row h-30px"></div>
+            <div class="row">
+                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3 class="txt-align-center">Book and Enjoy</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
+                <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h5 class="txt-align-center">Wherever you want our service, we are there always.</h5>
+                    <hr />
+                </div>
+                <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="card text-center">
+                            <img src="assets/background-images/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Lights</h5>
+                                <div class="row h-10px"></div>
+                                <p class="card-text">Togetherness, view the visuals of different ambient lights, different tailor made color shades accordingly to the atmosphere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row h-20px card-gap"></div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="card text-center">
+                            <img src="assets/background-images/2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Audio</h5>
+                                <div class="row h-10px"></div>
+                                <p class="card-text">Feel the sound even by closing eyes, we professionals will not make noise, will make you feel real sound.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row h-20px card-gap"></div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="card text-center">
+                            <img src="assets/background-images/3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Marriage Decorations</h5>
+                                <div class="row h-10px"></div>
+                                <p class="card-text">Decorations made of flowers like rose, carnation, daisy will give you colourful atmosphere and peaceful mind for all.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+                <div class="row h-20px"></div>
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="card text-center">
+                            <img src="assets/background-images/4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Stages and Truss</h5>
+                                <div class="row h-10px"></div>
+                                <p class="card-text">Any kind of events need stages and truss, to hold all your events wherever placed. Whatever it is, we hold for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row h-20px card-gap"></div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="card text-center">
+                            <img src="assets/background-images/5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">School and College Events</h5>
+                                <div class="row h-10px"></div>
+                                <p class="card-text">From kinder garden to adults, they happy when it comes to performance. No worries, we will keep your performance steady.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row h-20px card-gap"></div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="card text-center">
+                            <img src="assets/background-images/6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Video</h5>
+                                <div class="row h-10px"></div>
+                                <p class="card-text">Memories are memories, when it is captured. It should be captured in different poses, different atmosphere, etc., We do all.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+                <div class="row h-20px"></div>
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="card text-center">
+                            <img src="assets/background-images/7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Birthday and Private Parties</h5>
+                                <div class="row h-10px"></div>
+                                <p class="card-text">Special day comes rarely, we arrange all for special people on any occasion. You come, we welcome you with arrangements made.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row h-20px card-gap"></div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="card text-center">
+                            <img src="assets/background-images/8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Software and Hardware</h5>
+                                <div class="row h-10px"></div>
+                                <p class="card-text">Nothing can be done, without hardware parts. Even hardware, cannot do anything without softwares. We do both.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row h-20px card-gap"></div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="card text-center">
+                            <img src="assets/background-images/9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Event Management</h5>
+                                <div class="row h-10px"></div>
+                                <p class="card-text">In a single shot, we are nothing but A-Z. Whatever you want, we provide you with good quality and at right time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+                <div class="row h-20px"></div>
+            </div>
+        </div>
+    </div>
+</div>

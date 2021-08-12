@@ -1,0 +1,230 @@
+@import "../../../styles/color.scss";
+@import "../../../styles/text-styles.scss";
+.technology-stack h3,
+.technology-stack .card h5 {
+  font-weight: bold;
+}
+.technology-stack h3,
+.technology-stack h5 {
+  color: $color-cathams-blue;
+}
+.technology-stack .card h5 {
+  margin: 0 !important;
+}
+.technology-stack hr {
+  height: 0.5px !important;
+}
+.carousel {
+  position: relative;
+  display: inline-block;
+}
+.carousel .left,
+.carousel .right {
+  height: 100%;
+  width: 50px;
+  align-items: center;
+  font-size: 1.5rem;
+  color: $color-cathams-blue;
+  position: absolute;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+}
+.carousel .left {
+  left: 0;
+  cursor: pointer;
+}
+.carousel .right {
+  right: 0;
+  cursor: pointer;
+}
+.carousel .bottom {
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  bottom: 20px;
+}
+.carousel .bottom .carousel-highlighter {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: $color-cathams-blue;
+  cursor: pointer;
+}
+.on {
+  background-color: $color-white !important;
+  border: 2px solid $color-cathams-blue !important;
+  padding: 2px;
+}
+.carousel .left:hover i,
+.carousel .right:hover i {
+  color: $color-white;
+  background-color: $color-cathams-blue;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  animation: icon-move 1s;
+}
+.carousel .main {
+  height: calc(100% - 10px);
+  position: absolute;
+  width: 99%;
+  background-color: $color-white;
+  margin: 5px;
+}
+.carousel-1 {
+  position: relative;
+}
+.carousel-1 h3 {
+  font-size: 2.5rem;
+  color: $color-dark-charcoal;
+}
+.carousel-1 h1 {
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Audiowide";
+  color: $color-web-orange;
+}
+.carousel-1 span {
+  font-size: 3rem;
+  font-family: "Nexa";
+  color: $color-dark-charcoal;
+}
+.carousel-1 .round-holder {
+  position: relative;
+}
+.carousel-1 .round {
+  width: 10px;
+  height: 10px;
+  background-color: $color-web-orange;
+  position: absolute;
+  border-radius: 50px;
+  top: 23px;
+}
+.carousel-1 h4 {
+  text-align: center;
+}
+.carousel .main .carousel-1 img {
+  height: 200px;
+  width: 200px;
+  margin-top: 75px;
+}
+.carousel .main .carousel-1 h3 {
+  text-align: center;
+}
+.carousel .main .carousel-1 h3 {
+  font-weight: bold;
+}
+.left-img {
+  float: right;
+  animation: icon-move-left 15s linear 0s infinite;
+}
+.right-img {
+  float: left;
+  animation: icon-move-right 15s linear 0s infinite;
+}
+.carousel-many h1,
+.carousel-many h5 {
+  text-align: center;
+}
+.carousel-many h6 {
+  text-align: right;
+}
+.carousel-many img {
+  height: 490px;
+  width: 100%;
+}
+.carousel-many .row {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.carousel-top-space {
+  height: 120px;
+}
+
+.carousel-header {
+  height: 100px;
+}
+
+.carousel-author h6 {
+  line-height: 100px;
+}
+
+.technology-stack .card:hover {
+  bottom: 5px;
+}
+
+//Media Queries
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .left-img,
+  .right-img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .carousel-top-space {
+    height: 88px;
+  }
+  .carousel-header {
+    height: 80px !important;
+  }
+  .carousel .main .carousel-1 h3 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .carousel-1 h4 {
+    font-size: 1rem;
+  }
+  .carousel-1 .round {
+    top: 15px;
+  }
+  .carousel .main {
+    width: 98%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card-gap {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card-gap {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .card-gap {
+    display: none;
+  }
+}
+.promote h3,
+.promote h4 {
+  color: $color-white;
+  text-align: center;
+}
+.promote-list i {
+  font-size: 3rem;
+  color: $color-cathams-blue;
+}
+.promote-list .card:hover i {
+  animation: icon-move 1s;
+}

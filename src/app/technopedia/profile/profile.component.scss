@@ -1,0 +1,163 @@
+@import "../../../styles/color.scss";
+.profile .photo img {
+  margin-left: 100px;
+}
+.profile {
+  position: absolute;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 150px;
+  top: 105px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.profile .photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid $color-cathams-blue;
+  margin: 0px auto;
+}
+.profile-data {
+  margin: 30px;
+  background-color: $color-white;
+  border-radius: 10px;
+  border: 2px solid $color-cathams-blue;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 20%), 0 0 10px 0 rgb(0 0 0 / 19%);
+}
+.profile-data h5,
+.profile-about h5 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $color-cathams-blue;
+}
+.profile-data h6 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $color-cathams-blue;
+}
+.profile-about h6 {
+  text-align: center;
+}
+.profile-data hr {
+  background-color: $color-light-grey;
+  height: 0.5px !important;
+  opacity: 1;
+  margin: 0;
+}
+.profile-location1 div i {
+  color: $color-cathams-blue;
+  font-size: 1.8rem;
+}
+.profile-location1 div:hover i {
+  animation: icon-move 2s;
+}
+.profile-location1 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-location1 div h6 {
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+.facebook,
+.twitter,
+.instagram {
+  border-left: 1px solid $color-light-grey;
+}
+.profile-location2 ul {
+  list-style: none;
+}
+.profile-location2 ul li {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.profile-location2 ul li i {
+  padding: 0 !important;
+  font-size: 2rem;
+}
+.profile-location2 ul li a {
+  line-height: 30px;
+}
+.profile-about p {
+  margin-bottom: 0 !important;
+  padding: 1rem !important;
+  text-align: justify !important;
+}
+.profile-location1 ul {
+  list-style: none;
+  display: inline-flex;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.profile-location1 ul li {
+  width: 25%;
+  text-align: center;
+}
+.profile-location1 ul li a {
+  text-decoration: none;
+  justify-content: center;
+}
+.profile-location1 ul li i {
+  color: $color-cathams-blue;
+  font-size: 2rem;
+}
+.profile-location1 ul li a {
+  display: flex;
+  align-items: center;
+  line-height: 47px;
+}
+.profile-location1 ul li i:hover {
+  animation: icon-move 2s;
+}
+.profile-location1 ul li span {
+  font-size: 1.5rem;
+  color: $color-cathams-blue;
+}
+.facebook,
+.twitter,
+.instagram {
+  border-left: 1px solid $color-light-grey;
+}
+
+//Media Queries
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .profile-location1 ul li span {
+    display: none;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .profile-location1 ul li span {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .profile-location1 ul li span {
+    display: none;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .profile-location1 ul li span {
+    display: block;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .profile-location1 ul li span {
+    display: block;
+  }
+}

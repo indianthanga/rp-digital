@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-custom m-0 p-0 h-70px border-bottom-1px-solid-light-grey">
+  <div class="container-fluid h-100pt p-0 border-bottom-1px-solid-light-grey">
+    <a class="navbar-brand navbar-title ps-3" href="#">
+      <img src="assets/images/logo.png" class="title" />
+      <span class="sub-title"><u>Di</u>g<u>ital</u></span>
+    </a>
+    <ul class="navbar-nav ms-auto small-screen navbar-no-scroll">
+      <li class="nav-item">
+        <a class="nav-link  ms-2 me-2">
+          <i class="fas fa-expand"></i>
+        </a>
+      </li>
+    </ul>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-collapsive">
+        <li class="nav-item" [routerLink]="['/technopedia/home']" [routerLinkActive]="['active']">
+          <a class="nav-link  ms-2 me-3">
+            <i class="fas fa-home m-2" [routerLinkActive]="['active-text']"></i>
+            <span class="" [routerLinkActive]="['active-text']">Home</span>
+          </a>
+        </li>
+        <li class="nav-item" [routerLink]="['/technopedia/gallery']" [routerLinkActive]="['active']">
+          <a class="nav-link ms-2 me-3">
+            <i class="fab fa-envira m-2" [routerLinkActive]="['active-text']"></i>
+            <span class="" [routerLinkActive]="['active-text']">Gallery</span>
+          </a>
+        </li>
+        <li class="nav-item" [routerLink]="['/technopedia/about-us']" [routerLinkActive]="['active']">
+          <a class="nav-link ms-2 me-3">
+            <i class="fas fa-address-card m-2" [routerLinkActive]="['active-text']"></i>
+            <span class="" [routerLinkActive]="['active-text']">About Us</span>
+          </a>
+        </li>
+        <li class="nav-item" [routerLink]="['/technopedia/contact-us']" [routerLinkActive]="['active']">
+          <a class="nav-link ms-2 me-3">
+            <i class="fas fa-phone m-2" [routerLinkActive]="['active-text']"></i>
+            <span class="" [routerLinkActive]="['active-text']">Contact Us</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="navbar-nav ms-auto large-screen navbar-no-scroll">
+      <li class="nav-item" (click)="fullScreenToggle()">
+        <a class="nav-link  ms-2 me-2">
+          <i class="fas fa-expand"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
