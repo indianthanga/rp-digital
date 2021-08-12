@@ -1,0 +1,15 @@
+@import "color.scss";
+.navbar-custom {
+  background-color: $color-white !important;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: $color-dark-charcoal;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: $color-dark-charcoal;
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: $color-dark-charcoal;
+}

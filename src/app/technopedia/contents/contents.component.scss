@@ -1,0 +1,64 @@
+@import "../../../styles/color.scss";
+.sidebar {
+  display: block;
+  width: 260px;
+  height: 100vh;
+  background-color: $color-rebecca-blue;
+  box-shadow: 0 0 7px 0 rgb(0 0 0 / 20%);
+  overflow-y: auto;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.sidebar ul > li {
+  height: 44px;
+  line-height: 44px;
+  background-color: $color-white;
+  position: relative;
+  cursor: pointer;
+}
+.sidebar ul li > a {
+  margin-right: 1.15rem;
+  padding: 0 0 0 21px !important;
+  line-height: inherit;
+  height: inherit;
+}
+.sidebar ul li a > span {
+  font-size: 1.2rem;
+  margin: 0 0 0 25px;
+  font-weight: bold;
+  color: $color-rebecca-blue;
+}
+.sidebar ul li a > i {
+  font-size: 1rem;
+  color: $color-rebecca-blue;
+}
+.caret {
+  position: absolute;
+  line-height: 48px;
+  right: 15px;
+}
+.content i {
+  position: relative;
+  top: 1px;
+  left: 15px;
+}
+.content span {
+  font-size: 1rem !important;
+}
+.content:hover {
+  background-color: $color-rebecca-blue !important;
+  border: 0.5px solid $color-white;
+}
+.content:hover i, .content:hover span {
+  color: $color-white !important;
+}
+.main {
+  display: block;
+  width: calc(100% - 260px);
+  height: 100vh;
+  float: right;
+  box-shadow: 0 4px 7px 0 rgb(0 0 0 / 20%);
+}

@@ -1,0 +1,40 @@
+@import "../../../../styles/color.scss";
+.not-found {
+    position: absolute;
+    top: 0;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    height: 250px;
+    width: 80%;
+    text-align: center;
+    color: $color-rebecca-blue;
+}
+.not-found h1 {
+    font-weight: bolder;
+    font-size: 8rem;
+}
+.not-found h2 {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.not-found img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 32px;
+    animation: icon-move 10s infinite;
+}
+.not-found button {
+    border: 0;
+    outline: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5%;
+    margin: 5px;
+    background-color: $color-rebecca-blue;
+    color: $color-white;
+    font-weight: bold;
+}
