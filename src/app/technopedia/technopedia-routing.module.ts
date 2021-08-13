@@ -18,12 +18,12 @@ const routes: Routes = [
           import('./contents/contents.module').then((m) => m.ContentsModule),
       },
       {
-        path: 'about-u',
+        path: 'contact-us',
         loadChildren: () =>
           import('./credits/credits.module').then((m) => m.CreditsModule),
       },
       {
-        path: 'contact-u',
+        path: 'about-us',
         loadChildren: () =>
           import('./profile/profile.module').then((m) => m.ProfileModule),
       }
