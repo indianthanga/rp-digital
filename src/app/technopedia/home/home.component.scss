@@ -166,11 +166,6 @@
 //Media Queries
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .left-img,
-  .right-img {
-    width: 150px !important;
-    height: 150px !important;
-  }
   .carousel-top-space {
     height: 88px;
   }
@@ -190,10 +185,16 @@
   .carousel .main {
     width: 98%;
   }
+  .gap1 {
+    display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .carousel-1 h4 {
+    font-size: 1rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

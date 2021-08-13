@@ -74,7 +74,7 @@ export class HomeComponent implements OnInit {
       this.carouselIndex = this.carouselIndex + 1;
       if (this.carouselIndex > this.carousels.length - 1)
         this.carouselIndex = -1;
-    }, 10000);
+    }, 1000000);
   }
 
   moveCurrent(currentIndex: number) {
