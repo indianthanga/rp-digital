@@ -177,7 +177,7 @@
     font-size: 1.8rem;
   }
   .carousel-1 h4 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .carousel-1 .round {
     top: 15px;
@@ -188,13 +188,13 @@
   .gap1 {
     display: none;
   }
+  .carousel-1 h4 {
+    font-size: 1.2rem;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .carousel-1 h4 {
-    font-size: 1rem;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
